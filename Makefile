@@ -26,6 +26,6 @@ delete : down
 	@docker volume rm wordpress && echo "\033[1;33m~| Nettoyage des images/containers/volumes de Docker : OK |~\033[0m"\
 	
 prune :
-	@sudo rm -rf /home/user/docker/_data/wordpress/*
-	@sudo rm -rf /home/user/docker/_data/mariadb/*
+	@sudo rm -rf /home/$USER/docker/_data/wordpress/*
+	@sudo rm -rf /home/$USER/docker/_data/mariadb/*
 	@docker system prune -af && echo "\033[1;33m~| Nettoyage du cache de Docker : OK |~\033[0m"\
