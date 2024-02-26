@@ -1,14 +1,14 @@
-if [ -d "/home/jcasades/data" ]; then \
-    echo "/home/jcasades/data already exist"; else \
-	mkdir /home/jcasades/data; \
+if [ -d "/home/$USER/data" ]; then \
+    echo "/home/$USER/data already exist"; else \
+	mkdir /home/$USER/data; \
 fi
-if [ -d "/home/jcasades/data/mariadb" ]; then \
-    echo "/home/jcasades/data/mariadb already exist"; else \
-	mkdir /home/jcasades/data/mariadb; \
+if [ -d "/home/$USER/data/mariadb" ]; then \
+    echo "/home/$USER/data/mariadb already exist"; else \
+	mkdir /home/$USER/data/mariadb; \
 fi
-if  [ -d "/home/jcasades/data/wordpress" ]; then \
-    echo "/home/jcasades/data/wordpress already exist"; else \
-	mkdir /home/jcasades/data/wordpress; \
+if  [ -d "/home/$USER/data/wordpress" ]; then \
+    echo "/home/$USER/data/wordpress already exist"; else \
+	mkdir /home/$USER/data/wordpress; \
 fi
 
 
