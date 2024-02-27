@@ -1,7 +1,6 @@
 all : build
 
 build : 
-	./setup.sh
 	@sudo hostsed add 127.0.0.1 jcasades.42.fr && echo "\033[1;32m~|ADD jcasades.42.fr to /etc/hosts|~\033[0m"
 	@docker-compose -f ./srcs/docker-compose.yml up -d
 
